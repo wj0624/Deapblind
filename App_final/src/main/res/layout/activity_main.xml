@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/deepblind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/bmjua"
+        android:text="Deep Blind"
+        android:textColor="#000000"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/descrpition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below='@id/deepblind'
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bmjua"
+        android:text="시각장애인을 위한 음성안내 시스템"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/voice_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below='@id/descrpition'
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/speaking" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below='@id/voice_img'>
+
+        <Button
+            android:id="@+id/cameraBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/bmjua"
+            android:text="카메라"
+            android:padding="10dp"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/galleryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/bmjua"
+            android:text="갤러리"
+            android:padding="10dp"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
